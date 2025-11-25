@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/chaejuwon.github.io/tossPay/static/css/main.d854a5b6.css",
-    "main.js": "/chaejuwon.github.io/tossPay/static/js/main.16593e40.js",
-    "index.html": "/chaejuwon.github.io/tossPay/index.html",
-    "main.d854a5b6.css.map": "/chaejuwon.github.io/tossPay/static/css/main.d854a5b6.css.map",
-    "main.16593e40.js.map": "/chaejuwon.github.io/tossPay/static/js/main.16593e40.js.map"
+    "main.css": "/tossPay/static/css/main.d854a5b6.css",
+    "main.js": "/tossPay/static/js/main.1d2572f7.js",
+    "index.html": "/tossPay/index.html",
+    "main.d854a5b6.css.map": "/tossPay/static/css/main.d854a5b6.css.map",
+    "main.1d2572f7.js.map": "/tossPay/static/js/main.1d2572f7.js.map"
   },
   "entrypoints": [
     "static/css/main.d854a5b6.css",
-    "static/js/main.16593e40.js"
+    "static/js/main.1d2572f7.js"
   ]
 }
