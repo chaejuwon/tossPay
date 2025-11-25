@@ -5,7 +5,7 @@ function PaySuccess() {
 
   setTimeout(() => {
     clear(); // 결제 성공 시 장바구니 비우기
-    window.location.href = `/`;
+    window.location.href = `${window.location.origin}`;
   }, 2000);
 
 

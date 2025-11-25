@@ -26,13 +26,10 @@ function PayItem() {
       });
 
     } catch (error) {
-      // 취소일 때 처리
       if (error === "USER_CANCEL") {
         console.log("사용자가 결제를 취소했습니다.");
         return;
       }
-
-      // 그 외 오류 (진짜 오류)
       console.error(error);
     }
   };
@@ -57,8 +54,6 @@ function PayItem() {
             onClear ={() => removeItem(item.id)} />
         </Card>
       ))}
-
-      {/* 하단 고정 구매 버튼 */}
       <div className="border-t fixed bottom-0 left-0 w-full bg-white py-4 px-4">
         <Button onClick={onPayment} disabled={false} className="">
           총금액 {totalPrice.toLocaleString()}원
