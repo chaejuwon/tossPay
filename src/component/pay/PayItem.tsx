@@ -13,16 +13,28 @@ function PayItem() {
     (sum, item) => sum + item.price * item.qty, 0
   )
   const onPayment = async () => {
-    const tossPayments = await loadTossPayments("test_ck_ex6BJGQOVDONEEQj6Rwq3W4w2zNb");
+    try {
+      const tossPayments = await loadTossPayments("test_ck_ex6BJGQOVDONEEQj6Rwq3W4w2zNb");
 
-    await tossPayments.requestPayment("카드", {
-      amount: totalPrice,
-      orderId: `order_${new Date().getTime()}`,
-      orderName: "장바구니 결제",
-      customerName: "채주원",
-      successUrl: "pay/success",
-      failUrl: "pay/fail",
-    });
+      await tossPayments.requestPayment("카드", {
+        amount: totalPrice,
+        orderId: `order_${new Date().getTime()}`,
+        orderName: "장바구니 결제",
+        customerName: "채주원",
+        successUrl: `${window.location.origin}/#/pay/success`,
+        failUrl: `${window.location.origin}/#/pay/fail`,
+      });
+
+    } catch (error) {
+      // 취소일 때 처리
+      if (error === "USER_CANCEL") {
+        console.log("사용자가 결제를 취소했습니다.");
+        return;
+      }
+
+      // 그 외 오류 (진짜 오류)
+      console.error(error);
+    }
   };
   return (
     <div className="max-w-[900px] mx-auto px-4 my-4">

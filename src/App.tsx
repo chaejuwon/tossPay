@@ -4,8 +4,8 @@ import Product from "./pages/Product";
 import Pay from "./pages/Pay";
 import Detail from "./pages/Detail";
 import Container from "./component/layout/Container";
-import Success from "./component/pay/Success";
-import Fail from "./component/pay/Fail";
+import Success from "./component/pay/success";
+import Fail from "./component/pay/fail";
 
 function App() {
   return (

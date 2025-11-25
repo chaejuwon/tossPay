@@ -3,7 +3,12 @@ import useCartStore from "../../store/useCartStore";
 function PaySuccess() {
   const clear = useCartStore(state => state.clear);
 
-  clear(); // 결제 성공 시 장바구니 비우기
+  setTimeout(() => {
+    clear(); // 결제 성공 시 장바구니 비우기
+    window.location.href = `/`;
+  }, 2000);
+
+
 
   return (
     <div className="p-6">
