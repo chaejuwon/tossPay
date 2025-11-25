@@ -20,8 +20,8 @@ function PayItem() {
       orderId: `order_${new Date().getTime()}`,
       orderName: "장바구니 결제",
       customerName: "채주원",
-      successUrl: "http://localhost:3000/pay/success",
-      failUrl: "http://localhost:3000/pay/fail",
+      successUrl: "pay/success",
+      failUrl: "pay/fail",
     });
   };
   return (
