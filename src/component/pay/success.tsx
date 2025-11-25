@@ -1,11 +1,12 @@
 import useCartStore from "../../store/useCartStore";
+import { useNavigate } from "react-router-dom";
 
 function PaySuccess() {
   const clear = useCartStore(state => state.clear);
-
+  const navigate = useNavigate();
   setTimeout(() => {
     clear(); // 결제 성공 시 장바구니 비우기
-    window.location.href = `${window.location.origin}`;
+    navigate('/');
   }, 2000);
 
 
