@@ -4,7 +4,7 @@
     "name": "프로&익스트림 그립",
     "price": 29900,
     "realPrice": 42700,
-    "thumbnail": "/data/img/1.jpg",
+    "thumbnail": "data/img/1.jpg",
     "rating": 4.8,
     "reviewCount": 1840,
     "usp": ["손목 부담 감소", "초보자도 쉽게 착용", "미끄럼 방지 패드"]
@@ -14,7 +14,7 @@
     "name": "레더 벨트",
     "price": 69900,
     "realPrice": 99900,
-    "thumbnail": "/data/img/2.jpg",
+    "thumbnail": "data/img/2.jpg",
     "rating": 4.9,
     "reviewCount": 920,
     "usp": ["고급 소가죽", "허리 안정성 강화", "헤비 리프팅 최적화"]
@@ -24,7 +24,7 @@
     "name": "레더 스트랩",
     "price": 24900,
     "realPrice": 35600,
-    "thumbnail": "/data/img/3.jpg",
+    "thumbnail": "data/img/3.jpg",
     "rating": 4.8,
     "reviewCount": 740,
     "usp": ["고내구성 가죽", "원판 고중량 운동 적합", "강력한 손목 고정력"]
@@ -34,7 +34,7 @@
     "name": "그립테크 리프팅 스트랩",
     "price": 9900,
     "realPrice": 14100,
-    "thumbnail": "/data/img/4.jpg",
+    "thumbnail": "data/img/4.jpg",
     "rating": 4.7,
     "reviewCount": 2100,
     "usp": ["가성비 최강", "헬린이 입문용 추천", "손목 피로 최소화"]
@@ -44,7 +44,7 @@
     "name": "싱글프롱 브루탈 벨트",
     "price": 139000,
     "realPrice": 198600,
-    "thumbnail": "/data/img/5.jpg",
+    "thumbnail": "data/img/5.jpg",
     "rating": 4.9,
     "reviewCount": 330,
     "usp": ["파워리프팅급 강도", "견고한 싱글프롱 구조", "코어 안정성 극대화"]
@@ -54,7 +54,7 @@
     "name": "리프팅 슈즈",
     "price": 34900,
     "realPrice": 49900,
-    "thumbnail": "/data/img/6.jpg",
+    "thumbnail": "data/img/6.jpg",
     "rating": 4.8,
     "reviewCount": 1560,
     "usp": ["스크럼 방지 아웃솔", "스쿼트·데드리프트 최적화", "밀착 안정감"]
@@ -64,7 +64,7 @@
     "name": "팔꿈치 보호대",
     "price": 24900,
     "realPrice": 35600,
-    "thumbnail": "/data/img/7.jpg",
+    "thumbnail": "data/img/7.jpg",
     "rating": 4.7,
     "reviewCount": 420,
     "usp": ["압박 지지력 증가", "관절 부상 방지", "벤치프레스 필수템"]
@@ -74,7 +74,7 @@
     "name": "무릎 보호대",
     "price": 29900,
     "realPrice": 42700,
-    "thumbnail": "/data/img/8.jpg",
+    "thumbnail": "data/img/8.jpg",
     "rating": 4.8,
     "reviewCount": 980,
     "usp": ["스쿼트 안정성 향상", "탄탄한 압박 구조", "고중량 운동 대응"]
@@ -84,7 +84,7 @@
     "name": "하이엔드 리프팅 레버벨트",
     "price": 189000,
     "realPrice": 270000,
-    "thumbnail": "/data/img/9.jpg",
+    "thumbnail": "data/img/9.jpg",
     "rating": 4.9,
     "reviewCount": 510,
     "usp": ["레버 버클 적용", "대회급 고정력", "최상급 내구성 가죽"]
@@ -94,7 +94,7 @@
     "name": "백팩 울티메이트",
     "price": 94900,
     "realPrice": 135600,
-    "thumbnail": "/data/img/10.jpg",
+    "thumbnail": "data/img/10.jpg",
     "rating": 4.8,
     "reviewCount": 620,
     "usp": ["대용량 수납", "트레이닝용 장비 완전 적합", "방수 원단"]
@@ -104,7 +104,7 @@
     "name": "벤치프레스 보조밴드",
     "price": 24900,
     "realPrice": 35600,
-    "thumbnail": "/data/img/11.jpg",
+    "thumbnail": "data/img/11.jpg",
     "rating": 4.7,
     "reviewCount": 1780,
     "usp": ["가동범위 보조", "벤치 중량 상승 도움", "어깨 부담 완화"]
@@ -114,7 +114,7 @@
     "name": "손목보호대",
     "price": 14900,
     "realPrice": 21300,
-    "thumbnail": "/data/img/12.jpg",
+    "thumbnail": "data/img/12.jpg",
     "rating": 4.8,
     "reviewCount": 1320,
     "usp": ["강력한 압박력", "손목 흔들림 억제", "초보자~고수까지 전용"]
