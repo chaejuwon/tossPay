@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Product from "./pages/Product";
 import Pay from "./pages/Pay";
 import Detail from "./pages/Detail";
@@ -9,7 +9,7 @@ import Fail from "./component/pay/Fail";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Container />}>
           <Route path="/" element={<Product />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/detail/:id" element={<Detail />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
