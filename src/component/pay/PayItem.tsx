@@ -7,7 +7,7 @@ import { loadTossPayments } from "@tosspayments/payment-sdk";
 
 function PayItem() {
   const navigate = useNavigate();
-  const { items, updateQty, clear } = useCartStore();
+  const { items, updateQty, removeItem } = useCartStore();
   console.log(items);
   const totalPrice = items.reduce(
     (sum, item) => sum + item.price * item.qty, 0
@@ -27,7 +27,7 @@ function PayItem() {
   return (
     <div className="max-w-[900px] mx-auto px-4 my-4">
       {items.map((item) => (
-        <Card className="mt-3">
+        <Card className="mt-3" key={item.id}>
           <div className="flex gap-3 items-center">
             <div className="bg-gray-100">
               <img src={item.thumbnail} alt={item.name} className="w-24" />
@@ -42,7 +42,7 @@ function PayItem() {
             qty={item.qty}
             onIncrease={() => updateQty(item.id, item.qty + 1)}
             onDecrease={() => updateQty(item.id, item.qty - 1 > 1 ? item.qty - 1 : 1)}
-            onClear ={() => clear()} />
+            onClear ={() => removeItem(item.id)} />
         </Card>
       ))}
 
