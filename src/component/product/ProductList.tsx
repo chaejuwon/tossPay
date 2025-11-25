@@ -9,7 +9,7 @@ function ProductList() {
   const { products, setProducts } = useProductStore();
 
   useEffect(() => {
-    fetch("/data/product.json")
+    fetch("data/product.json")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
