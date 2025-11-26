@@ -18,13 +18,13 @@ function ProductList() {
 
   return (
     <div className="max-w-[900px] mx-auto my-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
         {products.map((item) => (
           <Card className="cursor-pointer" key={item.id}>
             <Link to={`/detail/${item.id}`}>
               <img src={`${process.env.PUBLIC_URL}${item.thumbnail}`} alt={item.name} />
-              <p className="text-gray-600 font-semibold mt-3">{item.name}</p>
-              <p className="flex items-center gap-2">
+              <p className="text-center md:text-left text-gray-600 font-semibold mt-3">{item.name}</p>
+              <p className="text-center md:text-left flex flex-col md:flex-row items-center gap-2">
                 <span className="font-bold text-red-600">
                   {Math.round(((item?.realPrice - item?.price) / item?.realPrice) * 100)}%
                 </span>
