@@ -39,7 +39,7 @@ function PayItem() {
         <Card className="mt-3" key={item.id}>
           <div className="flex gap-3 items-center">
             <div className="bg-gray-100">
-              <img src={item.thumbnail} alt={item.name} className="w-24" />
+              <img src={`${process.env.PUBLIC_URL}${item.thumbnail}`} alt={item.name} className="w-24" />
             </div>
             <div>
               <p className="font-bold">{item.name}</p>

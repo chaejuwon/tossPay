@@ -5,11 +5,9 @@ function PaySuccess() {
   const clear = useCartStore(state => state.clear);
   const navigate = useNavigate();
   setTimeout(() => {
-    clear(); // 결제 성공 시 장바구니 비우기
+    clear();
     navigate('/');
   }, 2000);
-
-
 
   return (
     <div className="p-6">

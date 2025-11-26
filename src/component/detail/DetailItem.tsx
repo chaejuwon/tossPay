@@ -22,7 +22,7 @@ function DetailItem() {
       {/* 이미지 */}
       <img
         className="w-full max-h-[500px] object-cover rounded-md"
-        src={item?.thumbnail}
+        src={`${process.env.PUBLIC_URL}${item?.thumbnail}`}
         alt={item?.name}
       />
 

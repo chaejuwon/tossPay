@@ -20,13 +20,13 @@ function Header() {
     <div className={`${title ? 'p-4 flex justify-between bg-gray-50' : 'p-4 bg-gray-50'}`}>
       {title ? (
         <>
-          <FaArrowLeft fontSize="20" onClick={onHistory} />
+          <FaArrowLeft className="cursor-pointer" fontSize="20" onClick={onHistory} />
           <h3 className="font-bold">{title}</h3>
         </>
       ) : null}
       <div className={`${title ? 'flex gap-4' : 'flex justify-between'}`}>
-        <FaCartShopping fontSize="20" onClick={onCart} />
-        <IoHomeSharp fontSize="20" onClick={onHome} />
+        <FaCartShopping className="cursor-pointer" fontSize="20" onClick={onCart} />
+        <IoHomeSharp className="cursor-pointer" fontSize="20" onClick={onHome} />
       </div>
     </div>
   )

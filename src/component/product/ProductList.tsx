@@ -9,7 +9,7 @@ function ProductList() {
   const { products, setProducts } = useProductStore();
 
   useEffect(() => {
-    fetch("data/product.json")
+    fetch(`${process.env.PUBLIC_URL}/data/product.json`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
@@ -22,7 +22,7 @@ function ProductList() {
         {products.map((item) => (
           <Card className="cursor-pointer" key={item.id}>
             <Link to={`/detail/${item.id}`}>
-              <img src={item.thumbnail} alt={item.name} />
+              <img src={`${process.env.PUBLIC_URL}${item.thumbnail}`} alt={item.name} />
               <p className="text-gray-600 font-semibold mt-3">{item.name}</p>
               <p className="flex items-center gap-2">
                 <span className="font-bold text-red-600">
