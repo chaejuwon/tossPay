@@ -2,9 +2,13 @@ import useCartStore from "../../store/useCartStore";
 
 function PaySuccess() {
   const clear = useCartStore(state => state.clear);
+
+  const host = window.location.hostname === "localhost";
+
+  const basedUrl = host ? "http://localhost:3000/#" : "https://chaejuwon.github.io/tossPay/#";
   setTimeout(() => {
     clear();
-    window.location.replace("/");
+    window.location.replace(`${basedUrl}`);
   }, 2000);
 
   return (

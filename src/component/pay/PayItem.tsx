@@ -14,6 +14,9 @@ function PayItem() {
   )
   const onPayment = async () => {
     try {
+      const host = window.location.hostname === "localhost";
+
+      const basedUrl = host ? "http://localhost:3000/#" : "https://chaejuwon.github.io/tossPay/#";
       const tossPayments = await loadTossPayments("test_ck_ex6BJGQOVDONEEQj6Rwq3W4w2zNb");
 
       await tossPayments.requestPayment("카드", {
@@ -21,8 +24,8 @@ function PayItem() {
         orderId: `order_${new Date().getTime()}`,
         orderName: "장바구니 결제",
         customerName: "채주원",
-        successUrl: `${window.location.origin}/#/pay/success`,
-        failUrl: `${window.location.origin}/#/pay/fail`,
+        successUrl: `${basedUrl}/pay/success`,
+        failUrl: `${basedUrl}/pay/fail`,
       });
 
     } catch (error) {
