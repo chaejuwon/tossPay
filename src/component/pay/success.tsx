@@ -1,12 +1,10 @@
 import useCartStore from "../../store/useCartStore";
-import { useNavigate } from "react-router-dom";
 
 function PaySuccess() {
   const clear = useCartStore(state => state.clear);
-  const navigate = useNavigate();
   setTimeout(() => {
     clear();
-    navigate('/');
+    window.location.replace("/");
   }, 2000);
 
   return (
