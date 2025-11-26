@@ -21,8 +21,8 @@ function PayItem() {
         orderId: `order_${new Date().getTime()}`,
         orderName: "장바구니 결제",
         customerName: "채주원",
-        successUrl: `${window.location.origin}/pay/success`,
-        failUrl: `${window.location.origin}/pay/fail`,
+        successUrl: `${window.location.origin}/#/pay/success`,
+        failUrl: `${window.location.origin}/#/pay/fail`,
       });
 
     } catch (error) {

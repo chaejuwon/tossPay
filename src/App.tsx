@@ -9,7 +9,7 @@ import Fail from "./component/pay/fail";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route element={<Container />}>
           <Route path="/" element={<Product />} />
@@ -20,7 +20,7 @@ function App() {
           <Route path="/detail/:id" element={<Detail />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
